@@ -8,7 +8,7 @@ weather_bp = Blueprint('weather', __name__, template_folder='templates/weather')
 def weather():
     if request.method == "POST":
         city = request.form.get("city")
-        api_key = "SUA_CHAVE_API_AQUI"
+        api_key = "97255134892b4485f8c5bbf60f4ae558"
         base_url = "http://api.openweathermap.org/data/2.5/weather"
         complete_url = f"{base_url}?q={city}&appid={api_key}&units=metric"
         response = requests.get(complete_url)
